@@ -1,4 +1,4 @@
-def capitalize(x):
+def capitalise(x):
     a = ord(x[0]) - 32
     a = chr(a)
     x = list(x)
@@ -6,3 +6,10 @@ def capitalize(x):
     x = "".join(x)
     return str(x)
 
+
+newline = []
+line = str(input())
+line = line.split(" ")
+for i in line:
+    newline.append(capitalise(i))
+print(" ".join(newline))
